@@ -6,4 +6,6 @@ const router = express.Router();
 router.post('/', registerUser); // POST /api/users
 router.get('/', getAllUsers);   // GET /api/users
 
+
+
 export default router;
