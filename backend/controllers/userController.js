@@ -7,6 +7,11 @@ export const registerUser = async (req, res) => {
   const { name, email, password } = req.body;
 
   try {
+
+
+
+    // test
+
     const userExists = await User.findOne({ email });
     if (userExists)
       return res.status(400).json({ message: 'User already exists' });
@@ -18,6 +23,8 @@ export const registerUser = async (req, res) => {
   } catch (error) {
     res.status(500).json({ message: 'Server error', error: error.message });
   }
+
+  // hello
 };
 
 // @desc    Get all users
