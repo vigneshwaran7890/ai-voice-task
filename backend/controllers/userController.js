@@ -18,6 +18,8 @@ export const registerUser = async (req, res) => {
   } catch (error) {
     res.status(500).json({ message: 'Server error', error: error.message });
   }
+
+  // hello
 };
 
 // @desc    Get all users
