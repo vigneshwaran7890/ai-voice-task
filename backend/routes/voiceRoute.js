@@ -6,4 +6,9 @@ const router = express.Router();
 
 router.post('/', parseTextController);
 
+
+router.get('/', (req, res) => {
+  res.send('Voice route is working!');
+});
+
 export default router;
