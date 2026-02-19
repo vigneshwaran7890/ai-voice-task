@@ -7,5 +7,9 @@ router.post('/', registerUser); // POST /api/users
 router.get('/', getAllUsers);   // GET /api/users
 
 
+router.get('/test', (req, res) => {
+  res.send('Test route');
+});
+
 
 export default router;
